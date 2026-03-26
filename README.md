@@ -45,7 +45,7 @@ systemctl enable zabbix-server zabbix-agent apache2
 
 ---
 
-Задание 2: Установка Zabbix Agent на два хоста
+## Задание 2: Установка Zabbix Agent на два хоста
 Хост 1: ZabbixServer (сервер Zabbix)
 Агент уже установлен вместе с сервером. Конфигурация /etc/zabbix/zabbix_agentd.conf:
 
