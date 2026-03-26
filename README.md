@@ -5,6 +5,7 @@
 
 ### Использованные команды
 
+```bash
 # Установка PostgreSQL
 apt update
 apt install -y postgresql postgresql-contrib
@@ -35,6 +36,7 @@ systemctl enable zabbix-server zabbix-agent apache2
 # Настройка часового пояса в PHP
 # В /etc/php/7.4/apache2/php.ini:
 # date.timezone = Europe/Moscow
+```
 
 Результат установки
 Скриншот авторизации в веб-интерфейсе Zabbix:
