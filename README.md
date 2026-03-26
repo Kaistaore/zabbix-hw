@@ -47,7 +47,7 @@ systemctl enable zabbix-server zabbix-agent apache2
 
 ## Задание 2: Установка Zabbix Agent на два хоста
 Хост 1: ZabbixServer (сервер Zabbix)
-Агент уже установлен вместе с сервером. Конфигурация /etc/zabbix/zabbix_agentd.conf:
+Агент установлен. Конфигурация /etc/zabbix/zabbix_agentd.conf:
 
 ini
 Server=127.0.0.1
@@ -56,7 +56,7 @@ Hostname=ZabbixServer
 Хост 2: ZabbixClientt (вторая виртуальная машина)
 Команды для установки агента на второй хост:
 
-bash
+```bash
 # Установка репозитория
 wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-4+debian11_all.deb
 dpkg -i zabbix-release_6.0-4+debian11_all.deb
@@ -73,6 +73,8 @@ apt install -y zabbix-agent
 # Запуск агента
 systemctl restart zabbix-agent
 systemctl enable zabbix-agent
+```
+
 Список хостов в Zabbix
 Скриншот страницы Configuration > Hosts с добавленными хостами:
 
@@ -88,8 +90,9 @@ systemctl enable zabbix-agent
 
 ![Данные агентов](screenshots/zabbix-latest-data.png)
 
+```
 Сетевые настройки
 Хост	IP адрес	Роль
 ZabbixServer	192.168.0.205	Zabbix Server + Agent
 ZabbixClientt	192.168.0.140	Zabbix Agent
-
+```
