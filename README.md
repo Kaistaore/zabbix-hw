@@ -40,7 +40,7 @@ systemctl enable zabbix-server zabbix-agent apache2
 Результат установки
 Скриншот авторизации в веб-интерфейсе Zabbix:
 
-https://screenshots/zabbix-admin-login.png
+![Авторизация в Zabbix](screenshots/zabbix-admin-login.png)
 
 ---
 
@@ -75,17 +75,17 @@ systemctl enable zabbix-agent
 Список хостов в Zabbix
 Скриншот страницы Configuration > Hosts с добавленными хостами:
 
-https://screenshots/zabbix-hosts.png
+![Хосты Zabbix](screenshots/zabbix-hosts.png)
 
 Лог Zabbix Agent на втором хосте
 Скриншот лога агента, подтверждающий работу с сервером:
 
-https://screenshots/zabbix-agent-log.png
+![Лог Zabbix Agent](screenshots/zabbix-agent-log.png)
 
 Данные от агентов
 Скриншот раздела Monitoring > Latest data для обоих хостов:
 
-https://screenshots/zabbix-latest-data.png
+![Данные агентов](screenshots/zabbix-latest-data.png)
 
 Сетевые настройки
 Хост	IP адрес	Роль
