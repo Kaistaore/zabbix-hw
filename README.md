@@ -5,7 +5,6 @@
 
 ### Использованные команды
 
-```bash
 # Установка PostgreSQL
 apt update
 apt install -y postgresql postgresql-contrib
